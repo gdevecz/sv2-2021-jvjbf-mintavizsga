@@ -7,7 +7,7 @@ public class Aquarium {
 
     public static final int CAPACITY = 20;
 
-    private final int livigSpace = 5;
+    private static final int LIVIG_SPACE = 5;
 
     private List<Fish> fishes = new ArrayList<>();
 
@@ -72,6 +72,6 @@ public class Aquarium {
     }
 
     private boolean isEnoughLivingSpaceForNewFish() {
-        return (fishes.size() + 1) * livigSpace <= CAPACITY;
+        return (fishes.size() + 1) * LIVIG_SPACE <= CAPACITY;
     }
 }

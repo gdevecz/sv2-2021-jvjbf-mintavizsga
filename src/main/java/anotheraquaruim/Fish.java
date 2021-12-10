@@ -8,7 +8,7 @@ public abstract class Fish {
 
     private String color;
 
-    public Fish(String name, int weight, String color) {
+    protected Fish(String name, int weight, String color) {
         this.name = name;
         this.weight = weight;
         this.color = color;
